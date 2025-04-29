@@ -90,7 +90,7 @@ button::placeholder {
 }
 .header-stars__7 {
   top: 468px;
-  right: 0px;
+  right: -8px;
 }
 .header-stars__8 {
   top: 538px;
@@ -100,6 +100,10 @@ button::placeholder {
   top: 568px;
   right: 224px;
 }
+.header-stars__10 {
+  top: 663px;
+  right: -60px;
+}
 .header-info {
   padding-top: 196px;
   width: 769px;
@@ -107,7 +111,8 @@ button::placeholder {
 .header-info__title {
   font-weight: 700;
   font-size: 64px;
-  line-height: 100%;
+  height: 156px;
+  line-height: 120%;
   letter-spacing: 0px;
   vertical-align: middle;
   color: rgb(32, 32, 39);
@@ -176,13 +181,15 @@ button::placeholder {
 .game-box {
   background-color: rgb(32, 32, 39);
   color: rgb(255, 255, 255);
-  padding-bottom: 144px;
+  padding-bottom: 142px;
 }
 .game-box__subset {
   padding-top: 94px;
+  padding-bottom: 2px;
 }
 .game-box__subset-title {
   margin-bottom: 24px;
+  height: 78px;
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -198,7 +205,7 @@ button::placeholder {
   vertical-align: middle;
 }
 .game-box__subset-about1 {
-  top: 77px;
+  top: 105px;
   right: -120px;
 }
 .game-box__subset-about2 {
@@ -309,7 +316,7 @@ button::placeholder {
   margin-bottom: 36px;
   font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0px;
   vertical-align: middle;
   color: rgb(32, 32, 39);
@@ -330,7 +337,7 @@ button::placeholder {
 .game-mini__title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0px;
   vertical-align: middle;
   color: rgb(32, 32, 39);

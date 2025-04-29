@@ -59,41 +59,55 @@ button {
     background-color: rgba(225, 255, 143, 1);
     height: 800px;
     &-stars {
-        &__1 {
+        &__1 { 
+            // малая слева
             top: 69px;
             left: 36px;
         }
         &__2 {
+            // средняя слева
             top: 94px;
             left: -57px;
         }
         &__3 {
+            // верхняя кочерга
             top: 0px;
             right: 149px;
         }
         &__4 {
+            // большая звезда
             top: 0px;
             right: -120px;
         }
         &__5 {
+            // кочерга средняя
             top: 254px;
             right: 111px;
         }
         &__6 {
+            // кочерга справа нижняя
             top: 379px;
             right: -120px;
         }
         &__7 {
+            // треугольник
             top: 468px;
-            right: 0px;
+            right: -8px;
         }
         &__8 {
+            // малая справа
             top: 538px;
             right: 335px;
         }
         &__9 {
+            // средняя справа
             top: 568px;
             right: 224px;
+        }
+        &__10 {
+            // косая
+            top: 663px;
+            right: -60px;
         }
     }
     &-info {
@@ -102,7 +116,8 @@ button {
         &__title {
             font-weight: 700;
             font-size: 64px;
-            line-height: 100%;
+            height: 156px;
+            line-height: 120%;
             letter-spacing: 0px;
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
@@ -183,11 +198,13 @@ button {
     // background-position: -120px 77px;
     // background-position-x: right;
     color: rgba(255, 255, 255, 1);
-    padding-bottom: 144px;
+    padding-bottom: 142px;
     &__subset {
         padding-top: 94px;
+        padding-bottom: 2px;
         &-title {
             margin-bottom: 24px;
+            height: 78px;
             font-weight: 700;
             font-size: 64px;
             line-height: 100%;
@@ -203,14 +220,17 @@ button {
             vertical-align: middle;
         }
         &-about1 {
-            top: 77px;
+            // большая звезда
+            top: 105px;
             right: -120px;
         }
         &-about2 {
+            // маленькая слева
             top: 770px;
             left: -91.17px;
         }
         &-about3 {
+            // средняя слева
             top: 822px;
             left: -74px;
         }
@@ -329,7 +349,7 @@ button {
         // text-align: center;
         font-weight: 700;
         font-size: 32px;
-        line-height: 100%;
+        line-height: 120%;
         letter-spacing: 0px;
         vertical-align: middle;
         color: rgba(32, 32, 39, 1);
@@ -337,7 +357,6 @@ button {
 }
 .game-mini {
     grid-column: span 12;
-
     display: flex;
     border-radius: 30px;
     // gap: 32px;
@@ -352,7 +371,7 @@ button {
     &__title {
         font-weight: 700;
         font-size: 48px;
-        line-height: 100%;
+        line-height: 120%;
         letter-spacing: 0px;
         vertical-align: middle;
         color: rgba(32, 32, 39, 1);
