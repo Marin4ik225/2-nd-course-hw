@@ -131,7 +131,7 @@ button {
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
 
-            &-black {
+            &_black {
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;
@@ -202,7 +202,7 @@ button {
     &__subset {
         padding-top: 94px;
         padding-bottom: 2px;
-        &-title {
+        &_title {
             margin-bottom: 24px;
             height: 78px;
             font-weight: 700;
@@ -211,7 +211,7 @@ button {
             letter-spacing: 0px;
             vertical-align: middle;
         }
-        &-text {
+        &_text {
             width: 788px;
             font-weight: 400;
             font-size: 24px;
@@ -219,34 +219,34 @@ button {
             letter-spacing: 0px;
             vertical-align: middle;
         }
-        &-about1 {
+        &_about1 {
             // большая звезда
             top: 105px;
             right: -120px;
         }
-        &-about2 {
+        &_about2 {
             // маленькая слева
             top: 770px;
             left: -91.17px;
         }
-        &-about3 {
+        &_about3 {
             // средняя слева
             top: 822px;
             left: -74px;
         }
-        &-mini1 {
+        &_mini1 {
             top: 143px;
             right: 2.79px;
         }
-        &-mini2 {
+        &_mini2 {
             top: 176px;
             right: -69.86px;
         }
-        &-mini3 {
+        &_mini3 {
             top: 10px;
             right: -69px;
         }
-        &-mini4 {
+        &_mini4 {
             top: 58px;
             right: 29px;
         }
