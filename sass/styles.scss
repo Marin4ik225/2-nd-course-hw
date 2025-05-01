@@ -59,7 +59,7 @@ button {
     background-color: rgba(225, 255, 143, 1);
     height: 800px;
     &-stars {
-        &__1 { 
+        &__1 {
             // малая слева
             top: 69px;
             left: 36px;
@@ -112,7 +112,9 @@ button {
     }
     &-info {
         padding-top: 196px;
-        width: 769px;
+        max-width: 769px;
+        display: flex;
+        flex-direction: column;
         &__title {
             font-weight: 700;
             font-size: 64px;
@@ -142,6 +144,7 @@ button {
         }
         &__button {
             display: inline-block;
+            align-self: start;
             margin-top: 48px;
             background-color: #202027;
             border: 1px solid rgba(0, 0, 0, 1);
@@ -161,11 +164,11 @@ button {
             }
         }
     }
-    // &-nav1 {
-    //     overflow: hidden;
-    // }
-    &-nav {
+    &-nav1 {
         overflow: hidden;
+    }
+    &-nav {
+        // overflow: hidden;
         z-index: 2;
         width: 3220px;
         height: 90px;
@@ -210,6 +213,9 @@ button {
             line-height: 100%;
             letter-spacing: 0px;
             vertical-align: middle;
+            &1 {
+                display: none;
+            }
         }
         &-text {
             width: 788px;
@@ -268,36 +274,22 @@ button {
 }
 
 .game {
+    width: 378px;
     z-index: 2;
     display: inline-block;
     grid-column: span 4;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
-    width: 378px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 30px;
     &:hover {
         // width: 406.2283020019531px;
         text-decoration: none;
     }
+    &__info {
+        padding: 32px 32px 36px 32px;
+    }
     &-margin {
         margin-top: -40px;
-
-    }
-    &-1 {
-        height: 473px;
-    }
-    &-2 {
-        height: 512px;
-    }
-    &-4 {
-        height: 551px;
-    }
-    &-5 {
-        height: 512px;
-        // &:hover {
-        //     height: 550.0660400390625px;
-        //     text-decoration: none;
-        // }
     }
     &__pic {
         height: 314px;
@@ -327,9 +319,6 @@ button {
         }
     }
     &__num {
-        margin-top: 32px;
-        margin-left: 32px;
-        margin-right: 32px;
         display: inline-block;
         font-weight: 500;
         font-size: 16px;
@@ -343,9 +332,6 @@ button {
     }
     &__title {
         margin-top: 16px;
-        margin-left: 32px;
-        margin-right: 32px;
-        margin-bottom: 36px;
         // text-align: center;
         font-weight: 700;
         font-size: 32px;
@@ -364,7 +350,6 @@ button {
     background-color: rgba(255, 255, 255, 1);
     &__info {
         box-sizing: border-box;
-        height: 500px;
         max-width: 600px;
         padding: 48px 48px 0 48px;
     }
@@ -402,8 +387,9 @@ button {
         }
     }
     &__pic {
-        background-color: red;
+        background-size: 600px;
         width: 600px;
+        height: 500px;
         color: rgba(255, 255, 255, 1);
         border-radius: 30px;
         &1 {
@@ -439,3 +425,5 @@ button {
         color: rgba(0, 0, 0, 1);
     }
 }
+
+@import "mobile";
