@@ -240,7 +240,7 @@ button::placeholder {
   gap: 32px;
   align-items: start;
 }
-.game-box__info-mini {
+.game-box__info_mini {
   grid-template-rows: repeat(6, 1fr);
 }
 
@@ -256,19 +256,19 @@ button::placeholder {
 .game:hover {
   text-decoration: none;
 }
-.game-margin {
+.game_margin {
   margin-top: -40px;
 }
-.game-1 {
+.game_1 {
   height: 473px;
 }
-.game-2 {
+.game_2 {
   height: 512px;
 }
-.game-4 {
+.game_4 {
   height: 551px;
 }
-.game-5 {
+.game_5 {
   height: 512px;
 }
 .game__pic {

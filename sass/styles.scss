@@ -262,7 +262,7 @@ button {
         //     gap: 10px;
         // }
     }
-    &__info-mini {
+    &__info_mini {
         grid-template-rows: repeat(6, 1fr);
     }
 }
@@ -279,20 +279,20 @@ button {
         // width: 406.2283020019531px;
         text-decoration: none;
     }
-    &-margin {
+    &_margin {
         margin-top: -40px;
 
     }
-    &-1 {
+    &_1 {
         height: 473px;
     }
-    &-2 {
+    &_2 {
         height: 512px;
     }
-    &-4 {
+    &_4 {
         height: 551px;
     }
-    &-5 {
+    &_5 {
         height: 512px;
         // &:hover {
         //     height: 550.0660400390625px;
