@@ -192,7 +192,7 @@ button::placeholder {
   padding-top: 94px;
   padding-bottom: 2px;
 }
-.game-box__subset-title {
+.game-box__subset_title {
   margin-bottom: 24px;
   height: 78px;
   font-weight: 700;
@@ -201,10 +201,10 @@ button::placeholder {
   letter-spacing: 0px;
   vertical-align: middle;
 }
-.game-box__subset-title1 {
+.game-box__subset_title1 {
   display: none;
 }
-.game-box__subset-text {
+.game-box__subset_text {
   width: 788px;
   font-weight: 400;
   font-size: 24px;
@@ -212,31 +212,31 @@ button::placeholder {
   letter-spacing: 0px;
   vertical-align: middle;
 }
-.game-box__subset-about1 {
+.game-box__subset_about1 {
   top: 105px;
   right: -120px;
 }
-.game-box__subset-about2 {
+.game-box__subset_about2 {
   top: 770px;
   left: -91.17px;
 }
-.game-box__subset-about3 {
+.game-box__subset_about3 {
   top: 822px;
   left: -74px;
 }
-.game-box__subset-mini1 {
+.game-box__subset_mini1 {
   top: 143px;
   right: 2.79px;
 }
-.game-box__subset-mini2 {
+.game-box__subset_mini2 {
   top: 176px;
   right: -69.86px;
 }
-.game-box__subset-mini3 {
+.game-box__subset_mini3 {
   top: 10px;
   right: -69px;
 }
-.game-box__subset-mini4 {
+.game-box__subset_mini4 {
   top: 58px;
   right: 29px;
 }
@@ -248,7 +248,7 @@ button::placeholder {
   gap: 32px;
   align-items: start;
 }
-.game-box__info-mini {
+.game-box__info_mini {
   grid-template-rows: repeat(6, 1fr);
 }
 
@@ -267,7 +267,7 @@ button::placeholder {
 .game__info {
   padding: 32px 32px 36px 32px;
 }
-.game-margin {
+.game_margin {
   margin-top: -40px;
 }
 .game__pic {
@@ -478,7 +478,7 @@ button::placeholder {
     vertical-align: middle;
     color: rgb(32, 32, 39);
   }
-  .header-info__text-black {
+  .header-info__text_black {
     max-width: 296px;
     font-weight: 600;
     font-size: 16px;
@@ -527,7 +527,7 @@ button::placeholder {
   .game-box__subset_mobile {
     display: none;
   }
-  .game-box__subset-title {
+  .game-box__subset_title {
     height: 49px;
     font-weight: 700;
     font-size: 40px;
@@ -535,28 +535,28 @@ button::placeholder {
     letter-spacing: 0px;
     vertical-align: middle;
   }
-  .game-box__subset-title1 {
+  .game-box__subset_title1 {
     display: block;
   }
-  .game-box__subset-about1 {
+  .game-box__subset_about1 {
     display: none;
   }
-  .game-box__subset-about2 {
+  .game-box__subset_about2 {
     display: none;
   }
-  .game-box__subset-about3 {
+  .game-box__subset_about3 {
     display: none;
   }
-  .game-box__subset-mini1 {
+  .game-box__subset_mini1 {
     display: none;
   }
-  .game-box__subset-mini2 {
+  .game-box__subset_mini2 {
     display: none;
   }
-  .game-box__subset-mini3 {
+  .game-box__subset_mini3 {
     display: none;
   }
-  .game-box__subset-mini4 {
+  .game-box__subset_mini4 {
     display: none;
   }
   .game-box__info {
@@ -571,7 +571,7 @@ button::placeholder {
   .game__info {
     padding: 32px 32px 36px 32px;
   }
-  .game-margin {
+  .game_margin {
     margin-top: 0;
   }
   .game__pic {
