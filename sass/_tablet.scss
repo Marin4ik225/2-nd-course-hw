@@ -1,0 +1,142 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .text-spacing {
+        letter-spacing: 50px;
+    }
+    .header {
+        &-stars {
+            &__1 {
+                // малая слева
+                top: 69px;
+                left: 36px;
+            }
+            &__2 {
+                // средняя слева
+                top: 94px;
+                left: -12px;
+            }
+            &__3 {
+                // верхняя кочерга
+                display: none;
+            }
+            &__4 {
+                // большая звезда
+                width: 300px;
+                height: 400px;
+                top: 0px;
+                right: -32px;
+            }
+            &__5 {
+                // кочерга средняя
+                display: none;
+            }
+            &__6 {
+                // кочерга справа нижняя
+                display: none;
+            }
+            &__7 {
+                // треугольник
+                display: none;
+            }
+            &__8 {
+                // малая справа
+                top: 538px;
+                right: 125px;
+            }
+            &__9 {
+                // средняя справа
+                top: 568px;
+                right: 50px;
+            }
+            &__10 {
+                // косая
+                display: none;
+            }
+        }
+        &-info {
+            max-width: 760px;
+            &__title {
+                z-index: 3;
+                font-size: 58px;
+            }
+        }
+    }
+    .game-box {
+        padding-bottom: 60px;
+        &__subset {
+            padding-top: 60px;
+            &_title {
+                margin-bottom: 8px;
+                font-size: 50px;
+            }
+            &_about1 {
+                // большая звезда
+                top: 105px;
+                right: -32px;
+            }
+            &_about2 {
+                // маленькая слева
+                display: none;
+            }
+            &_about3 {
+                // средняя слева
+                display: none;
+            }
+            &_mini1 {
+                display: none;
+            }
+            &_mini2 {
+                display: none;
+            }
+            &_mini3 {
+                display: none;
+            }
+            &_mini4 {
+                display: none;
+            }
+        }
+        &__info {
+            margin-top: 32px;
+        }
+    }
+    .game {
+        &__title {
+            margin-top: 12px;
+            font-size: 24px;
+        }
+    }
+    .game-mini {
+        max-width: 1024px;
+        &__title {
+            font-size: 46px;
+            line-height: 100%;
+        }
+        &__info {
+            width: 50%;
+            padding: 16px 16px 0 16px;
+        }
+        &__pic {
+            height: 400px;
+            background-size: 512px;
+        }
+        &__button {
+            margin-top: 24px;
+        }
+    }
+}
+
+@media (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .game {
+        &__pic {
+            background-size: 250px;
+            height: 220px;
+        }
+    }
+}
