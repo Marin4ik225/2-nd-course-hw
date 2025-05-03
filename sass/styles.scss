@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+html { 
+    overflow-x: hidden; 
+}
 body {
     font-family: "Montserrat", serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -177,25 +180,28 @@ button {
             }
         }
     }
-    &-nav1 {
-        overflow: hidden;
-    }
+    // &-nav1 {
+    //     overflow: hidden;
+    // }
     &-nav {
-        // overflow: hidden;
+        
         z-index: 2;
-        width: 3220px;
-        height: 90px;
+        // width: 3220px;
+        // height: 90px;
+        padding: 27px 49px ;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 51px;
         flex-direction: row;
         align-items: center;
-        // padding-top: 27px;
-        // padding-bottom: 27px;
         background-color: rgba(188, 236, 48, 1);
+        backdrop-filter: blur(50px);
         left: 0px;
         top: 710px;
         &__link {
+            display: inline-block;
+            width: max-content;
             color: rgba(32, 32, 39, 1);
             font-weight: 700;
             font-size: 30px;
@@ -286,6 +292,7 @@ button {
 }
 
 .game {
+    transition: transform 0.3s ease;
     max-width: 378px;
     z-index: 2;
     display: inline-block;
@@ -294,8 +301,9 @@ button {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 30px;
     &:hover {
-        // width: 406.2283020019531px;
+        transform: scale(1.05);
         text-decoration: none;
+        z-index: 1;
     }
     &__info {
         padding: 32px 32px 36px 32px;

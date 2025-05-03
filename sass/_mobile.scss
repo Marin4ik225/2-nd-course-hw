@@ -106,13 +106,16 @@
                 letter-spacing: 0px;
                 vertical-align: middle;
                 padding: 16px 103.5px;
+                &:hover {
+                    background-color: #202027;
+                    color: #ffffff;
+                }
             }
         }
         &-nav {
             // display: none;
             z-index: 2;
-            width: 1717px;
-            height: 51.34px;
+            padding: 16px 24px;
             gap: 27.4px;
             top: 649px;
             &__star {
@@ -247,7 +250,11 @@
             line-height: 142%;
             letter-spacing: 0%;
             text-align: center;
-        }
+            &:hover {
+                background-color: rgba(32, 32, 39, 1);
+                color: rgba(255, 255, 255, 1);
+            }
+    }
         &__pic {
             order: 1;
             width: 100%;

@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -170,23 +175,25 @@ button::placeholder {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.header-nav1 {
-  overflow: hidden;
-}
 .header-nav {
   z-index: 2;
-  width: 3220px;
-  height: 90px;
+  padding: 27px 49px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 51px;
   flex-direction: row;
   align-items: center;
   background-color: rgb(188, 236, 48);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   left: 0px;
   top: 710px;
 }
 .header-nav__link {
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
   color: rgb(32, 32, 39);
   font-weight: 700;
   font-size: 30px;
@@ -262,6 +269,7 @@ button::placeholder {
 }
 
 .game {
+  transition: transform 0.3s ease;
   max-width: 378px;
   z-index: 2;
   display: inline-block;
@@ -271,7 +279,9 @@ button::placeholder {
   border-radius: 30px;
 }
 .game:hover {
+  transform: scale(1.05);
   text-decoration: none;
+  z-index: 1;
 }
 .game__info {
   padding: 32px 32px 36px 32px;
@@ -628,10 +638,13 @@ button::placeholder {
     vertical-align: middle;
     padding: 16px 103.5px;
   }
+  .header-info__button:hover {
+    background-color: #202027;
+    color: #ffffff;
+  }
   .header-nav {
     z-index: 2;
-    width: 1717px;
-    height: 51.34px;
+    padding: 16px 24px;
     gap: 27.4px;
     top: 649px;
   }
@@ -755,6 +768,10 @@ button::placeholder {
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;
+  }
+  .game-mini__button:hover {
+    background-color: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
   }
   .game-mini__pic {
     order: 1;
