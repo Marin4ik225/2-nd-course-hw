@@ -57,8 +57,9 @@
             }
         }
         &-info {
-            max-width: 760px;
+            max-width: 1024px;
             &__title {
+                width: 720px;
                 z-index: 3;
                 font-size: 58px;
             }
@@ -103,6 +104,11 @@
         }
     }
     .game {
+        grid-column: span 4;
+        width: 322px;
+        &_margin {
+            margin-top: 0px;
+        }
         &__title {
             margin-top: 12px;
             font-size: 24px;
@@ -133,10 +139,40 @@
         padding-left: 24px;
         padding-right: 24px;
     }
-    .game {
-        &__pic {
-            background-size: 250px;
-            height: 220px;
+    .text-spacing {
+        letter-spacing: 10px;
+    }
+
+    .game-box {
+        &__info {
+            grid-template-columns: repeat(9, 1fr);
+            gap: 24px;
         }
     }
+    .game {
+        grid-column: span 4;
+        height: 487px;
+        &__title {
+            width: 250px;
+        }
+    }
+    .game-mini {
+        grid-column: span 8;
+        &__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            color: rgba(32, 32, 39, 1);
+        }
+            &__text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            color: rgba(32, 32, 39, 1);
+        }
+        }
 }
