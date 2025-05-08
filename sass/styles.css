@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Montserrat", serif;
   overflow-x: hidden;
@@ -121,11 +117,14 @@ button::placeholder {
 }
 .header-info {
   padding-top: 196px;
-  max-width: 769px;
+  padding-bottom: 154px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
 }
 .header-info__title {
+  display: inline-block;
+  width: 769px;
   z-index: 3;
   font-weight: 700;
   font-size: 64px;
@@ -138,6 +137,7 @@ button::placeholder {
 }
 .header-info__text {
   z-index: 3;
+  width: 720px;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -175,9 +175,16 @@ button::placeholder {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+.header-nav1 {
+  max-width: 100%;
+  overflow: hidden;
+  background-color: rgb(188, 236, 48);
+}
 .header-nav {
+  position: relative;
   z-index: 2;
-  padding: 27px 49px;
+  width: 3220px;
+  height: 90px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -185,10 +192,6 @@ button::placeholder {
   flex-direction: row;
   align-items: center;
   background-color: rgb(188, 236, 48);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  left: 0px;
-  top: 710px;
 }
 .header-nav__link {
   display: inline-block;
@@ -367,7 +370,7 @@ button::placeholder {
 .game-mini__button {
   margin-top: 36px;
   background-color: rgb(32, 32, 39);
-  padding: 16px 75.5px;
+  box-sizing: border-box;
   color: rgb(255, 255, 255);
   border-radius: 60px;
   font-weight: 600;
@@ -467,9 +470,10 @@ button::placeholder {
     display: none;
   }
   .header-info {
-    max-width: 760px;
+    max-width: 1024px;
   }
   .header-info__title {
+    width: 720px;
     z-index: 3;
     font-size: 58px;
   }
@@ -508,6 +512,13 @@ button::placeholder {
   .game-box__info {
     margin-top: 32px;
   }
+  .game {
+    grid-column: span 4;
+    width: 322px;
+  }
+  .game_margin {
+    margin-top: 0px;
+  }
   .game__title {
     margin-top: 12px;
     font-size: 24px;
@@ -536,12 +547,41 @@ button::placeholder {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .game__pic {
-    background-size: 250px;
-    height: 220px;
+  .text-spacing {
+    letter-spacing: 10px;
+  }
+  .game-box__info {
+    grid-template-columns: repeat(9, 1fr);
+    gap: 24px;
+  }
+  .game {
+    grid-column: span 4;
+    height: 487px;
+  }
+  .game__title {
+    width: 250px;
+  }
+  .game-mini {
+    grid-column: span 8;
+  }
+  .game-mini__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgb(32, 32, 39);
+  }
+  .game-mini__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgb(32, 32, 39);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -599,9 +639,13 @@ button::placeholder {
   }
   .header-info {
     padding-top: 147px;
-    max-width: 296px;
+    padding-bottom: 130px;
+    max-width: 767px;
+    height: 371px;
+    align-items: center;
   }
   .header-info__title {
+    width: 262px;
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
@@ -611,6 +655,7 @@ button::placeholder {
     color: rgb(32, 32, 39);
   }
   .header-info__text {
+    width: 296px;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -644,9 +689,9 @@ button::placeholder {
   }
   .header-nav {
     z-index: 2;
-    padding: 16px 24px;
+    width: 1717.4026075958px;
+    height: 51.34px;
     gap: 27.4px;
-    top: 649px;
   }
   .header-nav__star {
     width: 19.34px;
@@ -762,7 +807,6 @@ button::placeholder {
   }
   .game-mini__button {
     margin-top: 32px;
-    padding: 16px 110.5px;
     font-weight: 600;
     font-size: 16px;
     line-height: 142%;
