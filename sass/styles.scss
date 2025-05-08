@@ -5,6 +5,7 @@
 
 body {
     font-family: "Montserrat", serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -59,64 +60,80 @@ button {
     background-color: rgba(225, 255, 143, 1);
     height: 800px;
     &-stars {
-        &__1 { 
+        &__1 {
             // малая слева
+            z-index: 1;
             top: 69px;
             left: 36px;
         }
         &__2 {
             // средняя слева
+            z-index: 1;
             top: 94px;
             left: -57px;
         }
         &__3 {
             // верхняя кочерга
+            z-index: 1;
             top: 0px;
             right: 149px;
         }
         &__4 {
             // большая звезда
+            z-index: 1;
             top: 0px;
             right: -120px;
         }
         &__5 {
             // кочерга средняя
+            z-index: 1;
             top: 254px;
             right: 111px;
         }
         &__6 {
             // кочерга справа нижняя
+            z-index: 1;
             top: 379px;
             right: -120px;
         }
         &__7 {
             // треугольник
+            z-index: 1;
             top: 468px;
             right: -8px;
         }
         &__8 {
             // малая справа
+            z-index: 1;
             top: 538px;
             right: 335px;
         }
         &__9 {
             // средняя справа
+            z-index: 1;
             top: 568px;
             right: 224px;
         }
         &__10 {
             // косая
+            z-index: 1;
             top: 663px;
             right: -60px;
         }
     }
     &-info {
         padding-top: 196px;
-        width: 769px;
+        padding-bottom: 154px;
+        max-width:  1400px;
+        display: flex;
+        flex-direction: column;
         &__title {
+            display: inline-block;
+            width: 769px;
+            z-index: 3;
             font-weight: 700;
             font-size: 64px;
-            height: 156px;
+            min-height: 156px;
             line-height: 120%;
             letter-spacing: 0px;
             vertical-align: middle;
@@ -124,6 +141,8 @@ button {
             padding-bottom: 24px;
         }
         &__text {
+            z-index: 3;
+            width: 720px;
             font-weight: 400;
             font-size: 24px;
             line-height: 32px;
@@ -131,7 +150,8 @@ button {
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
 
-            &_black {
+            &-black {
+                z-index: 3;
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;
@@ -142,6 +162,7 @@ button {
         }
         &__button {
             display: inline-block;
+            align-self: start;
             margin-top: 48px;
             background-color: #202027;
             border: 1px solid rgba(0, 0, 0, 1);
@@ -161,25 +182,31 @@ button {
             }
         }
     }
-    // &-nav1 {
-    //     overflow: hidden;
-    // }
-    &-nav {
+    &-nav1 {
+        max-width: 100%;
         overflow: hidden;
+        background-color: rgb(188, 236, 48);
+    }
+    &-nav {
+        position: relative;
         z-index: 2;
         width: 3220px;
         height: 90px;
+        // animation: scroll-left 15s linear infinite;
+        // padding: 27px 49px ;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 51px;
         flex-direction: row;
         align-items: center;
-        // padding-top: 27px;
-        // padding-bottom: 27px;
         background-color: rgba(188, 236, 48, 1);
-        left: 0px;
-        top: 710px;
+        // backdrop-filter: blur(50px);
+        // left: 0px;
+        // top: 710px;
         &__link {
+            display: inline-block;
+            width: max-content;
             color: rgba(32, 32, 39, 1);
             font-weight: 700;
             font-size: 30px;
@@ -210,9 +237,12 @@ button {
             line-height: 100%;
             letter-spacing: 0px;
             vertical-align: middle;
+            &1 {
+                display: none;
+            }
         }
         &_text {
-            width: 788px;
+            max-width: 788px;
             font-weight: 400;
             font-size: 24px;
             line-height: 32px;
@@ -255,55 +285,41 @@ button {
         margin-top: 72px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 32px;
+            gap: 32px;
         align-items: start;
         // &:hover {
         //     gap: 10px;
         // }
     }
-    &__info_mini {
-        grid-template-rows: repeat(6, 1fr);
-    }
+    // &__info_mini {
+    // }
 }
 
 .game {
+    transition: transform 0.3s ease;
+    max-width: 378px;
     z-index: 2;
     display: inline-block;
     grid-column: span 4;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
-    width: 378px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 30px;
     &:hover {
-        // width: 406.2283020019531px;
+        transform: scale(1.05);
         text-decoration: none;
+        z-index: 1;
+    }
+    &__info {
+        padding: 32px 32px 36px 32px;
     }
     &_margin {
         margin-top: -40px;
-
-    }
-    &_1 {
-        height: 473px;
-    }
-    &_2 {
-        height: 512px;
-    }
-    &_4 {
-        height: 551px;
-    }
-    &_5 {
-        height: 512px;
-        // &:hover {
-        //     height: 550.0660400390625px;
-        //     text-decoration: none;
-        // }
     }
     &__pic {
         height: 314px;
-        // background-color: violet;
         border-radius: 30px;
         background-repeat: no-repeat;
+        background-size: 378px;
         // &:hover {
         //     width: 406.2283020019531px;
         // }
@@ -327,9 +343,6 @@ button {
         }
     }
     &__num {
-        margin-top: 32px;
-        margin-left: 32px;
-        margin-right: 32px;
         display: inline-block;
         font-weight: 500;
         font-size: 16px;
@@ -343,9 +356,6 @@ button {
     }
     &__title {
         margin-top: 16px;
-        margin-left: 32px;
-        margin-right: 32px;
-        margin-bottom: 36px;
         // text-align: center;
         font-weight: 700;
         font-size: 32px;
@@ -356,6 +366,7 @@ button {
     }
 }
 .game-mini {
+    max-width: 1440px;
     grid-column: span 12;
     display: flex;
     border-radius: 30px;
@@ -363,9 +374,10 @@ button {
     // box-shadow: rgba(0, 0, 0, 0.13);
     background-color: rgba(255, 255, 255, 1);
     &__info {
+        width: 50%;
+        // width: 600px;
         box-sizing: border-box;
-        height: 500px;
-        max-width: 600px;
+        // max-width: 600px;
         padding: 48px 48px 0 48px;
     }
     &__title {
@@ -388,7 +400,8 @@ button {
     &__button {
         margin-top: 36px;
         background-color: rgba(32, 32, 39, 1);
-        padding: 16px 75.5px;
+        box-sizing: border-box;
+        // padding: 16px 75.5px;
         color: rgba(255, 255, 255, 1);
         border-radius: 60px;
         font-weight: 600;
@@ -402,8 +415,10 @@ button {
         }
     }
     &__pic {
-        background-color: red;
-        width: 600px;
+        width: 50%;
+        height: 500px;
+        background-size: 600px;
+        background-repeat: no-repeat;
         color: rgba(255, 255, 255, 1);
         border-radius: 30px;
         &1 {
@@ -439,3 +454,6 @@ button {
         color: rgba(0, 0, 0, 1);
     }
 }
+
+@import "tablet";
+@import "mobile";
