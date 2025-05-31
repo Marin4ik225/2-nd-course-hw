@@ -7,7 +7,7 @@
         letter-spacing: 2px;
     }
     .header {
-        height: 700px;
+        height: calc(700px - 51.34px);
         &-stars {
             &__1 {
                 // малая слева
@@ -29,8 +29,11 @@
             }
             &__4 {
                 // большая звезда
-                width: 160px;
-                height: 155px;
+                display: none;
+            }
+            &__41 {
+                // большая звезда
+                display: block;
                 top: 0px;
                 right: -16px;
             }
@@ -68,7 +71,7 @@
         &-info {
             padding-top: 147px;
             padding-bottom: 130px;
-            max-width: 767px;
+            max-width: 375px;
             height: 371px;
             align-items: center;
 
@@ -76,17 +79,18 @@
                 width: 262px;
                 font-weight: 700;
                 font-size: 40px;
-                line-height: 100%;
+                line-height: 120%;
                 letter-spacing: 0px;
                 text-align: center;
                 vertical-align: middle;
                 color: rgb(32, 32, 39);
             }
             &__text {
+                margin-top: 10px;
                 width: 296px;
                 font-weight: 400;
                 font-size: 16px;
-                line-height: 100%;
+                line-height: 110%;
                 letter-spacing: 0px;
                 text-align: center;
                 vertical-align: middle;
@@ -104,7 +108,7 @@
             }
             &__button {
                 align-self: center;
-                margin-top: 36px;
+                margin-top: 40px;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 100%;
@@ -119,12 +123,12 @@
         }
         // &-nav1 {
         // }
-            &-nav {
+        &-nav {
             // display: none;
             z-index: 2;
             width: 1717.402607595759px;
             height: 51.34px;
-                // padding: 16px 24px;
+            // padding: 16px 24px;
             gap: 27.4px;
             // top: 649px;
             &__star {
@@ -145,7 +149,7 @@
     .game-box {
         padding-bottom: 9.88px;
         &__subset {
-            padding-top: 48.34px;
+            padding-top: 54px;
             // padding-bottom: 2px;
             &_mobile {
                 display: none;
@@ -187,7 +191,7 @@
             }
         }
         &__info {
-            margin-top: 24px;
+            margin-top: 46px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
@@ -239,19 +243,23 @@
         &__title {
             font-weight: 700;
             font-size: 32px;
-            line-height: 100%;
+            line-height: 114%;
             letter-spacing: 0px;
             vertical-align: middle;
         }
         &__text {
-            padding-top: 16px;
+            padding-top: 20px;
             font-weight: 400;
             font-size: 16px;
-            line-height: 100%;
+            line-height: 120%;
             letter-spacing: 0px;
             vertical-align: middle;
         }
+        &__text1 {
+            padding-right: 40px;
+        }
         &__button {
+            width: 100%;
             margin-top: 32px;
             // padding: 16px 110.5px;
             font-weight: 600;
@@ -263,7 +271,7 @@
                 background-color: rgba(32, 32, 39, 1);
                 color: rgba(255, 255, 255, 1);
             }
-    }
+        }
         &__pic {
             order: 1;
             width: 100%;

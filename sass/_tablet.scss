@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
     .center {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .text-spacing {
         letter-spacing: 50px;
@@ -27,7 +27,7 @@
                 width: 300px;
                 height: 400px;
                 top: 0px;
-                right: -32px;
+                right: -24px;
             }
             &__5 {
                 // кочерга средняя
@@ -76,7 +76,7 @@
             &_about1 {
                 // большая звезда
                 top: 105px;
-                right: -32px;
+                right: -24px;
             }
             &_about2 {
                 // маленькая слева
@@ -100,14 +100,19 @@
             }
         }
         &__info {
-            margin-top: 32px;
+            margin-top: 24px;
+            // grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
         }
     }
     .game {
-        grid-column: span 4;
-        width: 322px;
+        // grid-column: span 4;
+        max-width: 320px;
         &_margin {
-            margin-top: 0px;
+            margin-top: 0;
+        }
+        &__info {
+            padding: 16px 16px 24px 16px;
         }
         &__title {
             margin-top: 12px;
@@ -145,7 +150,7 @@
 
     .game-box {
         &__info {
-            grid-template-columns: repeat(9, 1fr);
+            grid-template-columns: repeat(8, 1fr);
             gap: 24px;
         }
     }
@@ -158,6 +163,7 @@
     }
     .game-mini {
         grid-column: span 8;
+        max-width: 833px;
         &__title {
             font-weight: 700;
             font-size: 40px;
@@ -166,7 +172,7 @@
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
         }
-            &__text {
+        &__text {
             font-weight: 400;
             font-size: 20px;
             line-height: 24px;
@@ -174,5 +180,5 @@
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
         }
-        }
+    }
 }
