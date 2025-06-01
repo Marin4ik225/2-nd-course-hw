@@ -1,4 +1,6 @@
-let min = 0;
+// Игра 1. Угадай число от 1 до 100
+
+let min = 1;
 let max = 100;
 
 // при нажатии сгенерировать рандомное число
@@ -13,7 +15,7 @@ function startGameRandom() {
     console.log(valueRandom);
     let valueFind = -1;
     while (valueFind !== valueRandom) {
-        valueFind = prompt("Угадайте число. Введите значение от 0 до 100");
+        valueFind = prompt("Угадайте число. Введите значение от 1 до 100");
         if (Number(valueFind)) {
             if (valueFind < valueRandom) {
                 alert("Загаданное число больше введенного!");
