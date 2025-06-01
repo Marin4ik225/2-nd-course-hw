@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-html { 
-    overflow-x: hidden; 
-}
+
 body {
     font-family: "Montserrat", serif;
     overflow-x: hidden;
@@ -60,7 +58,7 @@ button {
 }
 .header {
     background-color: rgba(225, 255, 143, 1);
-    height: 800px;
+    height: 710px;
     &-stars {
         &__1 {
             // малая слева
@@ -85,6 +83,10 @@ button {
             z-index: 1;
             top: 0px;
             right: -120px;
+        }
+        &__41 {
+            // большая звезда
+            display: none;
         }
         &__5 {
             // кочерга средняя
@@ -125,10 +127,13 @@ button {
     }
     &-info {
         padding-top: 196px;
-        max-width: 769px;
+        padding-bottom: 154px;
+        max-width: 1400px;
         display: flex;
         flex-direction: column;
         &__title {
+            display: inline-block;
+            width: 769px;
             z-index: 3;
             font-weight: 700;
             font-size: 64px;
@@ -141,6 +146,7 @@ button {
         }
         &__text {
             z-index: 3;
+            width: 720px;
             font-weight: 400;
             font-size: 24px;
             line-height: 32px;
@@ -148,7 +154,7 @@ button {
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
 
-            &-black {
+            &_black {
                 z-index: 3;
                 font-weight: 600;
                 font-size: 24px;
@@ -156,6 +162,13 @@ button {
                 letter-spacing: 0px;
                 vertical-align: middle;
                 color: rgba(32, 32, 39, 1);
+                &:hover {
+                    text-decoration: none;
+                    color: rgba(32, 32, 39, 1);
+                }
+                &:active {
+                    color: rgba(32, 32, 39, 1);
+                }
             }
         }
         &__button {
@@ -180,15 +193,18 @@ button {
             }
         }
     }
-    // &-nav1 {
-    //     overflow: hidden;
-    // }
+    &-nav1 {
+        max-width: 100%;
+        overflow: hidden;
+        background-color: rgb(188, 236, 48);
+    }
     &-nav {
-        
+        position: relative;
         z-index: 2;
-        // width: 3220px;
-        // height: 90px;
-        padding: 27px 49px ;
+        width: 3220px;
+        height: 90px;
+        // animation: scroll-left 15s linear infinite;
+        // padding: 27px 49px ;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -196,9 +212,9 @@ button {
         flex-direction: row;
         align-items: center;
         background-color: rgba(188, 236, 48, 1);
-        backdrop-filter: blur(50px);
-        left: 0px;
-        top: 710px;
+        // backdrop-filter: blur(50px);
+        // left: 0px;
+        // top: 710px;
         &__link {
             display: inline-block;
             width: max-content;
@@ -280,7 +296,6 @@ button {
         margin-top: 72px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        // grid-template-rows: repeat(2, 1fr);
         gap: 32px;
         align-items: start;
         // &:hover {
@@ -369,6 +384,12 @@ button {
     // gap: 32px;
     // box-shadow: rgba(0, 0, 0, 0.13);
     background-color: rgba(255, 255, 255, 1);
+    &:nth-child(2n) > &__pic {
+        order: 1;
+    }
+    &:nth-child(2n) > &__info {
+        order: 2;
+    }
     &__info {
         width: 50%;
         // width: 600px;
@@ -396,7 +417,8 @@ button {
     &__button {
         margin-top: 36px;
         background-color: rgba(32, 32, 39, 1);
-        padding: 16px 75.5px;
+        box-sizing: border-box;
+        // padding: 16px 75.5px;
         color: rgba(255, 255, 255, 1);
         border-radius: 60px;
         font-weight: 600;
@@ -404,6 +426,7 @@ button {
         line-height: 142%;
         letter-spacing: 0%;
         text-align: center;
+        padding: 16px 75.5px;
         &:hover {
             background-color: rgba(255, 255, 255, 1);
             color: rgba(0, 0, 0, 1);
