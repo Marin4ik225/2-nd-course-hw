@@ -63,7 +63,7 @@ button::placeholder {
 
 .header {
   background-color: rgb(225, 255, 143);
-  height: 800px;
+  height: 710px;
 }
 .header-stars__1 {
   z-index: 1;
@@ -84,6 +84,9 @@ button::placeholder {
   z-index: 1;
   top: 0px;
   right: -120px;
+}
+.header-stars__41 {
+  display: none;
 }
 .header-stars__5 {
   z-index: 1;
@@ -145,13 +148,20 @@ button::placeholder {
   vertical-align: middle;
   color: rgb(32, 32, 39);
 }
-.header-info__text-black {
+.header-info__text_black {
   z-index: 3;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
+  color: rgb(32, 32, 39);
+}
+.header-info__text_black:hover {
+  text-decoration: none;
+  color: rgb(32, 32, 39);
+}
+.header-info__text_black:active {
   color: rgb(32, 32, 39);
 }
 .header-info__button {
@@ -345,6 +355,12 @@ button::placeholder {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
 }
+.game-mini:nth-child(2n) > .game-mini__pic {
+  order: 1;
+}
+.game-mini:nth-child(2n) > .game-mini__info {
+  order: 2;
+}
 .game-mini__info {
   width: 50%;
   box-sizing: border-box;
@@ -378,6 +394,7 @@ button::placeholder {
   line-height: 142%;
   letter-spacing: 0%;
   text-align: center;
+  padding: 16px 75.5px;
 }
 .game-mini__button:hover {
   background-color: rgb(255, 255, 255);
@@ -426,8 +443,8 @@ button::placeholder {
 
 @media (max-width: 1024px) {
   .center {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .text-spacing {
     letter-spacing: 50px;
@@ -447,7 +464,7 @@ button::placeholder {
     width: 300px;
     height: 400px;
     top: 0px;
-    right: -32px;
+    right: -24px;
   }
   .header-stars__5 {
     display: none;
@@ -489,7 +506,7 @@ button::placeholder {
   }
   .game-box__subset_about1 {
     top: 105px;
-    right: -32px;
+    right: -24px;
   }
   .game-box__subset_about2 {
     display: none;
@@ -510,14 +527,17 @@ button::placeholder {
     display: none;
   }
   .game-box__info {
-    margin-top: 32px;
+    margin-top: 24px;
+    gap: 16px;
   }
   .game {
-    grid-column: span 4;
-    width: 322px;
+    max-width: 320px;
   }
   .game_margin {
-    margin-top: 0px;
+    margin-top: 0;
+  }
+  .game__info {
+    padding: 16px 16px 24px 16px;
   }
   .game__title {
     margin-top: 12px;
@@ -551,7 +571,7 @@ button::placeholder {
     letter-spacing: 10px;
   }
   .game-box__info {
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 24px;
   }
   .game {
@@ -563,6 +583,7 @@ button::placeholder {
   }
   .game-mini {
     grid-column: span 8;
+    max-width: 833px;
   }
   .game-mini__title {
     font-weight: 700;
@@ -590,7 +611,7 @@ button::placeholder {
     letter-spacing: 2px;
   }
   .header {
-    height: 700px;
+    height: 648.66px;
   }
   .header-stars__1 {
     width: 21px;
@@ -608,8 +629,10 @@ button::placeholder {
     display: none;
   }
   .header-stars__4 {
-    width: 160px;
-    height: 155px;
+    display: none;
+  }
+  .header-stars__41 {
+    display: block;
     top: 0px;
     right: -16px;
   }
@@ -640,7 +663,7 @@ button::placeholder {
   .header-info {
     padding-top: 147px;
     padding-bottom: 130px;
-    max-width: 767px;
+    max-width: 375px;
     height: 371px;
     align-items: center;
   }
@@ -648,17 +671,18 @@ button::placeholder {
     width: 262px;
     font-weight: 700;
     font-size: 40px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
     color: rgb(32, 32, 39);
   }
   .header-info__text {
+    margin-top: 10px;
     width: 296px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 110%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
@@ -675,7 +699,7 @@ button::placeholder {
   }
   .header-info__button {
     align-self: center;
-    margin-top: 36px;
+    margin-top: 40px;
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -710,7 +734,7 @@ button::placeholder {
     padding-bottom: 9.88px;
   }
   .game-box__subset {
-    padding-top: 48.34px;
+    padding-top: 54px;
   }
   .game-box__subset_mobile {
     display: none;
@@ -748,7 +772,7 @@ button::placeholder {
     display: none;
   }
   .game-box__info {
-    margin-top: 24px;
+    margin-top: 46px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
@@ -793,19 +817,23 @@ button::placeholder {
   .game-mini__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 114%;
     letter-spacing: 0px;
     vertical-align: middle;
   }
   .game-mini__text {
-    padding-top: 16px;
+    padding-top: 20px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0px;
     vertical-align: middle;
   }
+  .game-mini__text1 {
+    padding-right: 40px;
+  }
   .game-mini__button {
+    width: 100%;
     margin-top: 32px;
     font-weight: 600;
     font-size: 16px;

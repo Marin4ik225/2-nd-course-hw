@@ -58,7 +58,7 @@ button {
 }
 .header {
     background-color: rgba(225, 255, 143, 1);
-    height: 800px;
+    height: 710px;
     &-stars {
         &__1 {
             // малая слева
@@ -83,6 +83,10 @@ button {
             z-index: 1;
             top: 0px;
             right: -120px;
+        }
+        &__41 {
+            // большая звезда
+            display: none;
         }
         &__5 {
             // кочерга средняя
@@ -124,7 +128,7 @@ button {
     &-info {
         padding-top: 196px;
         padding-bottom: 154px;
-        max-width:  1400px;
+        max-width: 1400px;
         display: flex;
         flex-direction: column;
         &__title {
@@ -150,7 +154,7 @@ button {
             vertical-align: middle;
             color: rgba(32, 32, 39, 1);
 
-            &-black {
+            &_black {
                 z-index: 3;
                 font-weight: 600;
                 font-size: 24px;
@@ -158,6 +162,13 @@ button {
                 letter-spacing: 0px;
                 vertical-align: middle;
                 color: rgba(32, 32, 39, 1);
+                &:hover {
+                    text-decoration: none;
+                    color: rgba(32, 32, 39, 1);
+                }
+                &:active {
+                    color: rgba(32, 32, 39, 1);
+                }
             }
         }
         &__button {
@@ -285,7 +296,7 @@ button {
         margin-top: 72px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-            gap: 32px;
+        gap: 32px;
         align-items: start;
         // &:hover {
         //     gap: 10px;
@@ -373,6 +384,12 @@ button {
     // gap: 32px;
     // box-shadow: rgba(0, 0, 0, 0.13);
     background-color: rgba(255, 255, 255, 1);
+    &:nth-child(2n) > &__pic {
+        order: 1;
+    }
+    &:nth-child(2n) > &__info {
+        order: 2;
+    }
     &__info {
         width: 50%;
         // width: 600px;
@@ -409,6 +426,7 @@ button {
         line-height: 142%;
         letter-spacing: 0%;
         text-align: center;
+        padding: 16px 75.5px;
         &:hover {
             background-color: rgba(255, 255, 255, 1);
             color: rgba(0, 0, 0, 1);
