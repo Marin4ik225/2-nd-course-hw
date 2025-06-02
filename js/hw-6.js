@@ -162,5 +162,5 @@ for (let i15 = 0; i15 < 6; i15++) {
 }
 const sum15 = mas15.reduce((total, number) => total + number, 0);
 console.log(mas15);
-console.log(sum15/6);
+console.log(sum15/mas15.length);
 
