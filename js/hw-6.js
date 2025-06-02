@@ -136,19 +136,31 @@ console.log(mas11);
 
 //Задание 12
 console.log('Задание 12');
-let mas12=['fjmnvhm', 'sdfgdhhj','fgdf','sdsf'];
+let mas12 = ['fjmnvhm', 'sdfgdhhj', 'fgdf', 'sdsf'];
 let mas12_1 = mas12.map(item => item.length);
 console.log(mas12_1);
 
 //Задание 13
 console.log('Задание 13');
-
+let mas13 = [2, 4, -6, 8, 4, 8, 0, -3, 5, -8, 0, 4, -585, 25];
+console.log(mas13.filter(item => item < 0));
 
 //Задание 14
 console.log('Задание 14');
-
+let mas14 = [];
+for (let i14 = 0; i14 < 10; i14++) {
+    mas14.push(Math.floor(Math.random() * 11));
+}
+console.log(mas14);
+console.log(mas14.filter(item => item % 2 == 0));
 
 //Задание 15
 console.log('Задание 15');
-
+let mas15 = [];
+for (let i15 = 0; i15 < 6; i15++) {
+    mas15.push(Math.floor(Math.random() * 11));
+}
+const sum15 = mas15.reduce((total, number) => total + number, 0);
+console.log(mas15);
+console.log(sum15/6);
 
