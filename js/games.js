@@ -80,15 +80,18 @@ let mas_lessons = [
 ];
 
 let lesson = 0;
+function startGameMath() {
 
-while (true) {
-    lesson = Math.floor(Math.random() * 3) + 1;
-    a = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
-    b = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
-    mas_lessons[lesson].funct(a, b);
-    if (confirm("Продолжаем?") == false) break;
+    while (true) {
+        lesson = Math.floor(Math.random() * 3) + 1;
+        a = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
+        b = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
+        mas_lessons[lesson].funct(a, b);
+        if (confirm("Продолжаем?") == false) break;
+    }
+    return;
 }
- 
+
 //-----------------------------------------------------------------------
 // Игра 3. «Переверни текст»
 
@@ -118,4 +121,5 @@ const quiz = [
 ];
 
 //-----------------------------------------------------------------------
+
 
