@@ -71,7 +71,7 @@
         &-info {
             padding-top: 147px;
             padding-bottom: 130px;
-            max-width: 375px;
+            // max-width: 375px;
             height: 371px;
             align-items: center;
 
@@ -149,6 +149,7 @@
     .game-box {
         padding-bottom: 9.88px;
         &__subset {
+            
             padding-top: 54px;
             // padding-bottom: 2px;
             &_mobile {
@@ -194,7 +195,10 @@
             margin-top: 46px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
+            // grid-template-rows: repeat(6, 1fr);
+            // gap: 24px;
+            justify-items: center;
+           
             // &:hover {
             //     gap: 10px;
             // }
