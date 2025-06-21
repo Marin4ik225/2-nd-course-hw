@@ -57,7 +57,7 @@
             }
         }
         &-info {
-            max-width: 1024px;
+            // max-width: 1024px;
             &__title {
                 width: 720px;
                 z-index: 3;
@@ -101,18 +101,21 @@
         }
         &__info {
             margin-top: 24px;
+            // justify-items: center;
             // grid-template-columns: repeat(12, 1fr);
-            gap: 16px;
+            gap: 24px;
         }
     }
     .game {
         // grid-column: span 4;
-        max-width: 320px;
+        // max-width: 320px;
         &_margin {
-            margin-top: 0;
+            margin-top: -28px;
         }
         &__info {
             padding: 16px 16px 24px 16px;
+            // justify-content: center;
+            // align-content: center;
         }
         &__title {
             margin-top: 12px;
@@ -159,6 +162,9 @@
         height: 487px;
         &__title {
             width: 250px;
+        }
+        &_margin {
+            margin-top: 0;
         }
     }
     .game-mini {
