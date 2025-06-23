@@ -1,7 +1,7 @@
 // Игра 1. Угадай число от 1 до 100
 
-let min = 1;
-let max = 100;
+let min1 = 1;
+let max1 = 100;
 
 // при нажатии сгенерировать рандомное число
 // вывести на экран предложение ввести значение от 0 до 100 (в valueFind)
@@ -11,7 +11,7 @@ let max = 100;
 // равно = вывести сообщение вы угадали
 // функция по онклику:
 function startGameRandom() {
-    let valueRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+    let valueRandom = Math.floor(Math.random() * (max1 - min1 + 1)) + min1;
     console.log(valueRandom);
     let valueFind = -1;
     while (valueFind !== valueRandom) {
@@ -36,3 +36,58 @@ function startGameRandom() {
 }
 
 
+// Игра 2. Простая арифметика
+let min2 = 1;
+let max2 = 10;
+let a = 0;
+let b = 0;
+let mas_lessons = [
+    {
+        funct: (a, b) => {
+            rezult = prompt("Найдите сумму двух чисел:  " + a + "+" + b);
+            console.log("rezult=", rezult, " ? ", a + b);
+            rezult == a + b ? alert("Правильно") : alert("не правильно");
+        }
+    },
+    {
+        funct: (a, b) => {
+            rezult = prompt("Найдите разность двух чисел:  " + a + "-" + b);
+            console.log("rezult=", rezult, " ? ", a - b);
+            rezult == a - b ? alert("Правильно") : alert("не правильно");
+        }
+    },
+    {
+        funct: (a, b) => {
+            rezult = prompt("Найдите произведение двух чисел:  " + a + "*" + b);
+            console.log("rezult=", rezult, " ? ", a * b);
+            rezult == a * b ? alert("Правильно") : alert("не правильно");
+        }
+    },
+    {
+        funct: (a, b) => {
+            rezult = prompt("Найдите деление двух чисел (окр до целого):  " + a + "/" + b);
+            if (b != 0) {
+                console.log("rezult=", rezult, " ? ", Math.round(a / b));
+                rezult == Math.round(a / b) ? alert("Правильно") : alert("не правильно");
+
+            } else {
+                console.log("rezult=", rezult, "на 0 не делится ");
+                alert("на 0 не делится");
+
+            }
+        }
+    }
+];
+
+let lesson = 0;
+function startGameMath() {
+
+    while (true) {
+        lesson = Math.floor(Math.random() * 3) + 1;
+        a = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
+        b = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
+        mas_lessons[lesson].funct(a, b);
+        if (confirm("Продолжаем?") == false) break;
+    }
+    return;
+}
