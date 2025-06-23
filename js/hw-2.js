@@ -1,18 +1,22 @@
 // Задание 1
+console.log('Задание 1');
 let a = 10;
 alert(a);
 a = 20;
 alert(a);
 
 //Задание 2 (9 января 2007г)
+console.log('Задание 2');
 let year_iPhone = "9 января 2007г";
 alert("год выпуска первого iPhone: " + year_iPhone);
 
 //Задание 3 (Стив Джобс)
+console.log('Задание 3');
 let name_js = "Стив Джобс";
 alert("имя создателя языка JavaScript: " + name_js);
 
 //Задание 4
+console.log('Задание 4');
 let per1 = 10;
 let per2 = 2;
 // Сложение (+):
@@ -33,11 +37,13 @@ alert("Деление: " + quotient);
 
 
 //Задание 5
+console.log('Задание 5');
 // Показатель степени (**):
 let power = 2 ** 5;
 alert("Показатель степени: " + power);
 
 //Задание 6
+console.log('Задание 6');
 // Модуль от деления (%), остаток от деления:
 a = 9;
 let b = 2;
@@ -45,6 +51,7 @@ let remainder = a % b;
 alert("Модуль от деления: " + remainder);
 
 //Задание 7
+console.log('Задание 7');
 let num = 1;
 // num = num + 5;
 num += 5;
@@ -62,10 +69,12 @@ alert("Результат: " + num);
 
 
 //Задание 8
+console.log('Задание 8');
 let age = prompt("Сколько вам лет?");
 alert("Ваш возраст: " + age + " лет");
 
 //Задание 9
+console.log('Задание 9');
 let user = {
     name: "Nika",
     age: 10,
@@ -73,5 +82,6 @@ let user = {
 };
 
 //Задание 10
+console.log('Задание 10');
 let user_name=prompt("Назовите своё имя:");
 alert("Привет, " + user_name + "!");
